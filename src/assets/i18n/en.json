@@ -3,6 +3,12 @@
     "home": "Home",
     "abought": "Abought",
     "projects": "Projects",
-    "contact": "Contact"
+    "contact": "Contact",
+    "search": "Search"
+  },
+
+  "footer": {
+    "since": "Since 2023",
+    "rights": "© All Rights Rescerved"
   }
 }

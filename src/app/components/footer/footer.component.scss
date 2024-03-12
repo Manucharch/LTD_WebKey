@@ -1,3 +1,10 @@
 .footer {
   background-color: var(--background);
 }
+
+.font {
+  color: #3d3d3e;
+  text-align: center;
+  font-size: clamp(10px, 1.3vw, 12px);
+  font-weight: bold;
+}

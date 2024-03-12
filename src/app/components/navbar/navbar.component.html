@@ -60,12 +60,14 @@
         <input
           class="form-control me-2"
           type="search"
-          placeholder="Search"
-          aria-label="Search"
+          [placeholder]="'main.search' | translate"
+          aria-label="'main.search' | translate"
           id="search"
           name="search"
         />
-        <button class="btn btn-outline-success" type="submit">Search</button>
+        <button class="btn btn-outline-success" type="submit">
+          {{ "main.search" | translate }}
+        </button>
       </form>
     </div>
   </div>
