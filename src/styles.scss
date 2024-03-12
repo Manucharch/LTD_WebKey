@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bodyColor);
+  font-family: "Work Sans", serif;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+}
+
+:root {
+  --background: #8bc34a;
+  --bodyColor: #ff9800;
+}

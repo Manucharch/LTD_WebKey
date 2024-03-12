@@ -1,0 +1,21 @@
+.navbar {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container-fluid {
+  background-color: var(--background);
+}
+
+a {
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 900px) {
+  .container-fluid {
+    padding: 0.2rem;
+  }
+  a {
+    font-size: 1rem;
+  }
+}
