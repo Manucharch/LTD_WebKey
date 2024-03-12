@@ -9,6 +9,9 @@ import { HomeComponent } from 'src/app/modules/home/components/home/home.compone
 import { AboughtComponent } from 'src/app/modules/abought/components/abought/abought.component';
 import { ProjectsComponent } from 'src/app/modules/projects/components/projects/projects.component';
 import { ContactComponent } from 'src/app/modules/contact/components/contact/contact.component';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { HttpClient } from '@angular/common/http';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 const routes: Routes = [
   {
@@ -26,6 +29,20 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [MainComponent, NavbarComponent, FooterComponent],
-  imports: [CommonModule, RouterModule.forChild(routes)],
+  imports: [
+    CommonModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: httpTranslateLoader,
+        deps: [HttpClient],
+      },
+    }),
+    RouterModule.forChild(routes),
+  ],
 })
 export class MainModule {}
+
+export function httpTranslateLoader(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}
