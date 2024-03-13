@@ -10,7 +10,7 @@ export class AppComponent {
   constructor(public translate: TranslateService) {
     // translate.addLangs(['en', 'ge']);
     // translate.setDefaultLang('ge');
-    translate.use(localStorage.getItem('Language') || 'en');
+    translate.use(localStorage.getItem('Language') || 'ge');
   }
   title = 'WebKey';
 }

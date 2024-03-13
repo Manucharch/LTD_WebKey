@@ -11,5 +11,10 @@
   "footer": {
     "since": "Since 2023",
     "rights": "© All Rights Rescerved"
+  },
+
+  "title": {
+    "h1": "WebKey",
+    "slogan": "Your Vision, Our Code"
   }
 }

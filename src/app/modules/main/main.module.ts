@@ -12,8 +12,9 @@ import { HomeComponent } from 'src/app/modules/home/components/home/home.compone
 import { AboughtComponent } from 'src/app/modules/abought/components/abought/abought.component';
 import { ProjectsComponent } from 'src/app/modules/projects/components/projects/projects.component';
 import { ContactComponent } from 'src/app/modules/contact/components/contact/contact.component';
-
 import { EntertainComponent } from 'src/app/modules/entertain/entertain.component';
+import { HomeModule } from 'src/app/modules/home/home.module';
+import { TitleComponent } from 'src/app/components/title/title.component';
 
 const routes: Routes = [
   {
@@ -31,7 +32,12 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [MainComponent, NavbarComponent, FooterComponent],
+  declarations: [
+    MainComponent,
+    NavbarComponent,
+    FooterComponent,
+    TitleComponent,
+  ],
   imports: [
     CommonModule,
     TranslateModule.forRoot({
@@ -42,6 +48,7 @@ const routes: Routes = [
       },
     }),
     RouterModule.forChild(routes),
+    HomeModule,
   ],
 })
 export class MainModule {}
