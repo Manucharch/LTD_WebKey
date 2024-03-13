@@ -11,7 +11,9 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background: var(--bodyColor);
+
+  background-image: url("../src/assets/img/backgrounds/main2.jpg");
+  background-position: center;
   font-family: "Work Sans", serif;
   font-weight: 400;
 }
