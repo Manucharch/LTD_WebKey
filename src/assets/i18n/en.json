@@ -1,10 +1,11 @@
 {
   "main": {
     "home": "Home",
-    "abought": "Abought",
+    "about": "About",
     "projects": "Projects",
     "contact": "Contact",
-    "search": "Search"
+    "search": "Search",
+    "entertain": "Entertain"
   },
 
   "footer": {

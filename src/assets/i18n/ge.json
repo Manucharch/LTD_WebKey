@@ -1,10 +1,11 @@
 {
   "main": {
     "home": "მთავარი",
-    "abought": "ინფო",
+    "about": "ინფო",
     "projects": "პროექტები",
     "contact": "კონტაქტი",
-    "search": "ძებნა"
+    "search": "ძებნა",
+    "entertain": "გაერთე"
   },
 
   "footer": {
