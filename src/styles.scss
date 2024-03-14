@@ -11,9 +11,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-
-  background-image: url("../src/assets/img/backgrounds/main2.jpg");
-  background-position: center;
+  background-color: rgb(20, 83, 154);
   font-family: "Work Sans", serif;
   font-weight: 400;
 }
@@ -28,6 +26,6 @@ h6 {
 }
 
 :root {
-  --background: #8bc34a;
+  --background: #f2f2f2b3;
   --bodyColor: #ff9800;
 }
