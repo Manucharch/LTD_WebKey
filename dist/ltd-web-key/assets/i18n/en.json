@@ -1,0 +1,26 @@
+{
+  "main": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact",
+    "search": "Search",
+    "entertain": "Entertain"
+  },
+
+  "footer": {
+    "rights": "© All Rights Rescerved"
+  },
+
+  "title": {
+    "h1": "WebKey",
+    "slogan": "Your Vision, Our Code"
+  },
+
+  "home": {
+    "alt": "nice sity view",
+    "about": "See our offers",
+    "cardtitle": "Why we need WEB",
+    "text": "In today's digital age, having a strong online presence is essential for businesses to thrive. A professionally designed website not only establishes credibility but also serves as a powerful marketing tool, allowing you to reach a wider audience and attract potential customers. Whether you're a small startup or a large corporation, investing in web development services ensures that your brand is represented effectively online, driving growth and success in the competitive digital landscape."
+  }
+}
