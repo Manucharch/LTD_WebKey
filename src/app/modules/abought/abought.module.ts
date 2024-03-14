@@ -5,11 +5,13 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { AboughtComponent } from 'src/app/modules/abought/components/abought/abought.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [AboughtComponent],
   imports: [
     CommonModule,
+    RouterModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

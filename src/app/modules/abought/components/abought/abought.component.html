@@ -12,7 +12,13 @@
       <div class="row">
         <div class="col-md-12">
           <div class="card">
-            <div class="card-body">{{ "about.general" | translate }}</div>
+            <div class="card-body">
+              <h5 class="card-title">{{ "about.titleG" | translate }}</h5>
+              <p class="card-text">{{ "about.general" | translate }}</p>
+              <a [routerLink]="'/contact'" class="btn btn-primary">{{
+                "about.contact" | translate
+              }}</a>
+            </div>
           </div>
         </div>
       </div>
@@ -20,35 +26,66 @@
 
     <section class="products">
       <div class="row">
-        <div class="col-md-4">
-          <div class="card-body">{{ "about.front" | translate }}</div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">{{ "about.titleFR" | translate }}</h5>
+              <p class="card-text">{{ "about.front" | translate }}</p>
+              <a [routerLink]="'/contact'" class="btn btn-primary">{{
+                "about.contact" | translate
+              }}</a>
+            </div>
+          </div>
         </div>
-        <div class="col-md-4">
-          <div class="card-body">{{ "about.back" | translate }}</div>
-        </div>
-        <div class="col-md-4">
-          <div class="card-body">{{ "about.full" | translate }}</div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">{{ "about.titleBK" | translate }}</h5>
+              <p class="card-text">{{ "about.back" | translate }}</p>
+              <a [routerLink]="'/contact'" class="btn btn-primary">{{
+                "about.contact" | translate
+              }}</a>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
 
-    <section class="more">
       <div class="row">
         <div class="col-md-6">
-          <div class="card-body">{{ "about.windows" | translate }}</div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">{{ "about.titleFL" | translate }}</h5>
+              <p class="card-text">{{ "about.full" | translate }}</p>
+              <a [routerLink]="'/contact'" class="btn btn-primary">{{
+                "about.contact" | translate
+              }}</a>
+            </div>
+          </div>
         </div>
+
         <div class="col-md-6">
-          <div class="card-body">{{ "about.front" | translate }}</div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">{{ "about.titleW" | translate }}</h5>
+              <p class="card-text">{{ "about.windows" | translate }}</p>
+              <a [routerLink]="'/contact'" class="btn btn-primary">{{
+                "about.contact" | translate
+              }}</a>
+            </div>
+          </div>
         </div>
+        <!-- <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">{{ "about.titleW" | translate }}</h5>
+              <p class="card-text">{{ "about.more" | translate }}</p>
+              <a [routerLink]="'/contact'" class="btn btn-primary">{{
+                "about.contact" | translate
+              }}</a>
+            </div>
+          </div>
+        </div> -->
       </div>
     </section>
-
-    <div class="row">
-      <div class="col-md-12">
-        <section class="title">
-          <h2>{{ "about.title" | translate }}</h2>
-        </section>
-      </div>
-    </div>
   </div>
 </div>

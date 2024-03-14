@@ -26,6 +26,16 @@
 
   "about": {
     "title": "About",
-    "general": "The company 'Webkey' offers full web services (FullStack Development), will prepare high-quality websites, portals, platforms or applications."
+    "contact": "Contact as",
+    "general": "The company 'Webkey' offers full web services (FullStack Development), will prepare high-quality websites, portals, platforms or applications.",
+    "titleG": "What we are offering",
+    "front": "Frontend development is the art of crafting engaging and intuitive user interfaces that captivate your audience. We specialize in creating responsive websites and web applications that not only look stunning but also provide seamless user experiences across all devices. From pixel-perfect designs to smooth navigation and interactive elements, our frontend development services ensure your digital presence leaves a lasting impression.",
+    "titleFR": "Frontend Development",
+    "back": "Backend development powers the functionality and performance of your website or application behind the scenes. Our expertise in backend technologies enables us to build robust server-side systems that handle data storage, processing, and communication efficiently. From designing scalable databases to implementing secure APIs and business logic, our backend development services ensure your platform operates seamlessly, providing reliability and performance for your users.",
+    "titleBK": "Backend development",
+    "full": "At WebKey, we offer comprehensive full-stack development services that cover both frontend and backend aspects of your project. Our full-stack developers are proficient in a wide range of technologies, allowing us to create dynamic and fully functional web applications from start to finish. From crafting captivating user interfaces to building robust server-side systems and integrating databases, our full-stack development expertise ensures that your project is executed seamlessly, delivering exceptional user experiences and meeting your business objectives.",
+    "titleFL": "FullStack Development",
+    "windows": "At 'WebKey', we specialize in Windows Forms development, leveraging the power of the Microsoft .NET framework to create intuitive desktop applications for Windows environments. Our team of experienced developers crafts sleek and efficient user interfaces tailored to meet your specific requirements. Whether you need standalone applications, data-driven tools, or custom business solutions, our Windows Forms development services deliver reliable, scalable, and user-friendly software to streamline your workflow and enhance productivity.",
+    "titleW": "Windows Applications"
   }
 }
