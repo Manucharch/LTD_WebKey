@@ -15,6 +15,7 @@ import { ContactComponent } from 'src/app/modules/contact/components/contact/con
 import { EntertainComponent } from 'src/app/modules/entertain/entertain.component';
 import { HomeModule } from 'src/app/modules/home/home.module';
 import { TitleComponent } from 'src/app/components/title/title.component';
+import { AboughtModule } from '../abought/abought.module';
 
 const routes: Routes = [
   {
@@ -49,6 +50,7 @@ const routes: Routes = [
     }),
     RouterModule.forChild(routes),
     HomeModule,
+    AboughtModule,
   ],
 })
 export class MainModule {}
