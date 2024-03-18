@@ -37,5 +37,16 @@
     "titleFL": "FullStack Development",
     "windows": "At 'WebKey', we specialize in Windows Forms development, leveraging the power of the Microsoft .NET framework to create intuitive desktop applications for Windows environments. Our team of experienced developers crafts sleek and efficient user interfaces tailored to meet your specific requirements. Whether you need standalone applications, data-driven tools, or custom business solutions, our Windows Forms development services deliver reliable, scalable, and user-friendly software to streamline your workflow and enhance productivity.",
     "titleW": "Windows Applications"
+  },
+
+  "contact": {
+    "contact": "Contact as",
+    "text": "Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within a matter of hours to help you.",
+    "name": "Your name",
+    "mail": "Your email",
+    "subject": "Subject",
+    "massage": "Your message",
+    "address": "Tbilisi, Georgia",
+    "send": "Send"
   }
 }
