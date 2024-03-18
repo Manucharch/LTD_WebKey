@@ -17,6 +17,7 @@ import { HomeModule } from 'src/app/modules/home/home.module';
 import { TitleComponent } from 'src/app/components/title/title.component';
 import { AboughtModule } from 'src/app/modules/abought/abought.module';
 import { ContactModule } from 'src/app/modules/contact/contact.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 const routes: Routes = [
   {
@@ -50,6 +51,7 @@ const routes: Routes = [
       },
     }),
     RouterModule.forChild(routes),
+    ReactiveFormsModule,
     HomeModule,
     AboughtModule,
     ContactModule,

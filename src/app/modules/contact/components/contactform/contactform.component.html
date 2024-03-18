@@ -1,0 +1,92 @@
+<form
+  id="contact-form"
+  name="contact-form"
+  [formGroup]="contactForm"
+  (ngSubmit)="submitForm()"
+>
+  <!--Grid row-->
+  <div class="row">
+    <!--Grid column-->
+    <div class="col-md-6">
+      <div class="md-form mb-0">
+        <input
+          type="text"
+          id="name"
+          name="name"
+          class="form-control"
+          formControlName="name"
+          required
+        />
+        <label for="name" class="">{{ "contact.name" | translate }}</label>
+      </div>
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-md-6">
+      <div class="md-form mb-0">
+        <input
+          type="text"
+          id="email"
+          name="email"
+          class="form-control"
+          formControlName="email"
+          required
+        />
+        <label for="email" class="">{{ "contact.mail" | translate }}</label>
+      </div>
+    </div>
+    <!--Grid column-->
+  </div>
+  <!--Grid row-->
+
+  <!--Grid row-->
+  <div class="row">
+    <div class="col-md-12">
+      <div class="md-form mb-0">
+        <input
+          type="text"
+          id="subject"
+          name="subject"
+          class="form-control"
+          formControlName="subject"
+          required
+        />
+        <label for="subject" class="">{{
+          "contact.subject" | translate
+        }}</label>
+      </div>
+    </div>
+  </div>
+  <!--Grid row-->
+
+  <!--Grid row-->
+  <div class="row">
+    <!--Grid column-->
+    <div class="col-md-12">
+      <div class="md-form">
+        <textarea
+          type="text"
+          id="message"
+          name="message"
+          rows="2"
+          class="form-control md-textarea"
+          formControlName="message"
+          required
+        ></textarea>
+        <label for="message">{{ "contact.massage" | translate }}</label>
+      </div>
+    </div>
+  </div>
+  <!--Grid row-->
+
+  <div class="text-center text-md-left">
+    <button
+      class="btn btn-primary"
+      type="submit"
+      [disabled]="contactForm.invalid"
+    >
+      {{ "contact.send" | translate }}
+    </button>
+  </div>
+</form>

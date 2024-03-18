@@ -5,9 +5,11 @@ import { HttpClient } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { ContactComponent } from 'src/app/modules/contact/components/contact/contact.component';
+import { ContactformComponent } from 'src/app/modules/contact/components/contactform/contactform.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [ContactComponent],
+  declarations: [ContactComponent, ContactformComponent],
   imports: [
     CommonModule,
     TranslateModule.forRoot({
@@ -17,6 +19,7 @@ import { ContactComponent } from 'src/app/modules/contact/components/contact/con
         deps: [HttpClient],
       },
     }),
+    ReactiveFormsModule,
   ],
 })
 export class ContactModule {}
