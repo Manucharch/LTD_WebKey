@@ -2,8 +2,10 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
+import { TranslateService } from '@ngx-translate/core';
 
 import { ContactInterface } from 'src/app/modules/contact/components/contactform/types/contact.interface';
+import { GetfromstorageService } from 'src/app/shared/services/getfromstorage.service';
 
 @Component({
   selector: 'app-contactform',
@@ -13,7 +15,12 @@ import { ContactInterface } from 'src/app/modules/contact/components/contactform
 export class ContactformComponent implements OnInit {
   contactForm!: FormGroup;
 
-  constructor(private formBuilder: FormBuilder, private http: HttpClient) {}
+  constructor(
+    private formBuilder: FormBuilder,
+    private http: HttpClient,
+    private service: GetfromstorageService,
+    private translate: TranslateService
+  ) {}
 
   ngOnInit(): void {
     this.initialiseForm();
@@ -29,14 +36,33 @@ export class ContactformComponent implements OnInit {
   }
 
   submitForm() {
+    var btn = document.getElementById('sbmbtn') as HTMLElement;
+
+    var replText: string = '';
+    var hello: string = '';
+    var newMess: string = '';
+    var wish: string = '';
+
     if (this.contactForm.valid) {
+      this.translate.get('contact').subscribe((data) => {
+        replText = data.replText;
+        hello = data.hello;
+        newMess = data.newMess;
+        wish = data.wish;
+        (document.getElementById('sbmbtn') as HTMLElement).innerHTML =
+          data.sending;
+      });
+
       const contact: ContactInterface = this.contactForm.value;
       const templateParams = {
         name: contact.name,
         email: contact.email,
-        to_name: 'Your Name', // Recipient's name
         subject: contact.subject,
         message: contact.message,
+        replText: replText,
+        hello: hello,
+        newMess: newMess,
+        wish: wish,
       };
 
       emailjs
@@ -48,7 +74,11 @@ export class ContactformComponent implements OnInit {
         )
         .then(
           (response) => {
-            console.log('SUCCESS!', response.status, response.text);
+            this.translate.get('contact').subscribe((data) => {
+              btn.innerHTML = data.send;
+            });
+            alert(response.text);
+            this.contactForm.reset();
           },
           (error) => {
             console.log('FAILED...', error);
