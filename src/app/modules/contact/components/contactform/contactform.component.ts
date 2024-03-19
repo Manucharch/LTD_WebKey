@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
+import emailjs from 'emailjs-com';
 import { TranslateService } from '@ngx-translate/core';
 
 import { ContactInterface } from 'src/app/modules/contact/components/contactform/types/contact.interface';
@@ -14,6 +14,7 @@ import { GetfromstorageService } from 'src/app/shared/services/getfromstorage.se
 })
 export class ContactformComponent implements OnInit {
   contactForm!: FormGroup;
+  showSpinner: boolean = false;
 
   constructor(
     private formBuilder: FormBuilder,
@@ -44,6 +45,7 @@ export class ContactformComponent implements OnInit {
     var wish: string = '';
 
     if (this.contactForm.valid) {
+      this.showSpinner = true;
       this.translate.get('contact').subscribe((data) => {
         replText = data.replText;
         hello = data.hello;
@@ -79,6 +81,7 @@ export class ContactformComponent implements OnInit {
             });
             alert(response.text);
             this.contactForm.reset();
+            this.showSpinner = false;
           },
           (error) => {
             console.log('FAILED...', error);

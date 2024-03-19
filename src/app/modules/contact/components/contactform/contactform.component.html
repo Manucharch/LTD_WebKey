@@ -86,12 +86,26 @@
 
     <div class="text-center text-md-left">
       <button
+        *ngIf="!showSpinner"
         id="sbmbtn"
         class="btn btn-primary"
         type="submit"
         [disabled]="contactForm.invalid"
       >
         {{ "contact.send" | translate }}
+      </button>
+      <button
+        *ngIf="showSpinner"
+        class="btn btn-primary"
+        type="button"
+        disabled
+      >
+        <span
+          class="spinner-grow spinner-grow-sm"
+          role="status"
+          aria-hidden="true"
+        ></span>
+        {{ "contact.sending" | translate }}
       </button>
     </div>
   </form>
