@@ -53,5 +53,9 @@
     "newMess": "You got a new message from WebKey",
     "wish": "Best wishes, WebKey team",
     "replText": "Your email has been received, our team will contact you shortly."
+  },
+
+  "projects": {
+    "link": "Go to WebSite"
   }
 }

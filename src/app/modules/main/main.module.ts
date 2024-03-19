@@ -18,7 +18,7 @@ import { TitleComponent } from 'src/app/components/title/title.component';
 import { AboughtModule } from 'src/app/modules/abought/abought.module';
 import { ContactModule } from 'src/app/modules/contact/contact.module';
 import { ReactiveFormsModule } from '@angular/forms';
-import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { ProjectsModule } from '../projects/projects.module';
 
 const routes: Routes = [
   {
@@ -56,7 +56,7 @@ const routes: Routes = [
     HomeModule,
     AboughtModule,
     ContactModule,
-    MatProgressSpinnerModule,
+    ProjectsModule,
   ],
 })
 export class MainModule {}
