@@ -61,6 +61,18 @@
   },
 
   "bio": {
-    "title": "Short Biography"
+    "title": "Short Biography",
+    "fullname": "FullName",
+    "name": "Manuchar Chachanidze",
+    "birthDay1": "Date of Bearth",
+    "birthDay2": "3 December, 1979",
+    "placeofbirth1": "Place of Bearth",
+    "placeofbirth2": "Tchiatura, Georgia",
+    "placeofrecidence1": "Place of Residenece",
+    "placeofrecidence2": "Tbilisi, Georgia",
+    "address1": "Address",
+    "address2": "Barnovi st. 80",
+    "phone": "Phone",
+    "email": "E-Mail"
   }
 }
