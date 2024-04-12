@@ -18,7 +18,9 @@ import { TitleComponent } from 'src/app/components/title/title.component';
 import { AboughtModule } from 'src/app/modules/abought/abought.module';
 import { ContactModule } from 'src/app/modules/contact/contact.module';
 import { ReactiveFormsModule } from '@angular/forms';
-import { ProjectsModule } from '../projects/projects.module';
+import { ProjectsModule } from 'src/app/modules/projects/projects.module';
+import { BioComponent } from 'src/app/modules/bio/components/bio/bio.component';
+import { BioModule } from '../bio/bio.module';
 
 const routes: Routes = [
   {
@@ -30,6 +32,7 @@ const routes: Routes = [
       { path: 'about', component: AboughtComponent },
       { path: 'projects', component: ProjectsComponent },
       { path: 'contact', component: ContactComponent },
+      { path: 'bio', component: BioComponent },
     ],
   },
   { path: 'entertain', component: EntertainComponent },
@@ -57,6 +60,7 @@ const routes: Routes = [
     AboughtModule,
     ContactModule,
     ProjectsModule,
+    BioModule,
   ],
 })
 export class MainModule {}
