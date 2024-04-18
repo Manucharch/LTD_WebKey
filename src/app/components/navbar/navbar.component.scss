@@ -3,7 +3,25 @@
   padding: 0px;
 }
 a {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.facebooke,
+.watsap,
+.messanger {
+  margin: 0.5rem;
+}
+
+.facebooke {
+  color: rgb(27, 139, 218);
+}
+
+.messanger {
+  color: rgb(101, 186, 246);
+}
+
+.watsap {
+  color: green;
 }
 
 @media screen and (max-width: 900px) {

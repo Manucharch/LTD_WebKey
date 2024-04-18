@@ -1,55 +1,18 @@
 <div class="contact">
-  <!--Section: Contact v.2-->
-  <section class="mb-4">
-    <!--Section heading-->
-    <h2 class="h1-responsive font-weight-bold text-center my-4">
+  <section>
+    <h2>
       {{ "contact.contact" | translate }}
     </h2>
-    <!--Section description-->
-    <p class="text-center w-responsive mx-auto mb-5">
+
+    <p>
       {{ "contact.text" | translate }}
     </p>
+    <div class="d-flex">
+      <p>{{ "contact.address" | translate }}</p>
 
-    <div class="row">
-      <!--Grid column-->
-      <div class="col-md-8 mb-md-0 mb-5">
-        <app-contactform></app-contactform>
-      </div>
-      <!--Grid column-->
+      <p>manucharch@gmail.com</p>
 
-      <!--Grid column-->
-      <div class="col-md-4 mb-md-0 mb-5 text-center cnt">
-        <ul class="list-unstyled mb-0">
-          <li>
-            <i class="fas fa-map-marker-alt fa-2x"></i>
-            <p>{{ "contact.address" | translate }}</p>
-          </li>
-
-          <li>
-            <i class="fas fa-phone mt-4 fa-2x"></i>
-            <p>+ 995 557 96 13 27</p>
-          </li>
-
-          <li>
-            <i class="fas fa-envelope mt-4 fa-2x"></i>
-            <p>manucharch@gmail.com</p>
-          </li>
-        </ul>
-      </div>
-      <!--Grid column-->
+      <p>+ 995 557 96 13 27</p>
     </div>
   </section>
-  <!--Section: Contact v.2-->
-
-  <!-- <div *ngIf="!showSpinner" class="spinner">
-    <div class="spinner-grow text-primary" role="status">
-      <span class="sr-only"></span>
-    </div>
-    <div class="spinner-grow text-secondary" role="status">
-      <span class="sr-only"></span>
-    </div>
-    <div class="spinner-grow text-success" role="status">
-      <span class="sr-only"></span>
-    </div>
-  </div> -->
 </div>
