@@ -118,6 +118,8 @@
     "candela1": "cd",
     "candela2": "Luminous Intensity",
     "candela3": "In the International System of Units (SI), the candela (cd) is formally defined as the unit of luminous intensity. It is defined based on the spectral sensitivity of the human eye to light of different wavelengths. Specifically, the candela is defined such that the luminous intensity of a light source emitting monochromatic radiation at a frequency of 540 × 10^12 hertz (corresponding to green light) is 1 / 683 watt per steradian. This definition ensures that the candela is based on human perception of light and provides a standardized measure of the brightness of a light source.",
-    "candela4": "Prior to the establishment of the candela, various units such as candles, oil lamps, and gas lamps were used, but they lacked precision and consistency."
+    "candela4": "Prior to the establishment of the candela, various units such as candles, oil lamps, and gas lamps were used, but they lacked precision and consistency.",
+    "converttitle": "Unit Convertations",
+    "convunit": "Units"
   }
 }
