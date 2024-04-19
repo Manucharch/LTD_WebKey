@@ -12,7 +12,6 @@ import { HomeComponent } from 'src/app/modules/home/components/home/home.compone
 import { AboughtComponent } from 'src/app/modules/abought/components/abought/abought.component';
 import { ProjectsComponent } from 'src/app/modules/projects/components/projects/projects.component';
 import { ContactComponent } from 'src/app/modules/contact/components/contact/contact.component';
-import { EntertainComponent } from 'src/app/modules/entertain/entertain.component';
 import { HomeModule } from 'src/app/modules/home/home.module';
 import { TitleComponent } from 'src/app/components/title/title.component';
 import { AboughtModule } from 'src/app/modules/abought/abought.module';
@@ -20,7 +19,9 @@ import { ContactModule } from 'src/app/modules/contact/contact.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ProjectsModule } from 'src/app/modules/projects/projects.module';
 import { BioComponent } from 'src/app/modules/bio/components/bio/bio.component';
-import { BioModule } from '../bio/bio.module';
+import { BioModule } from 'src/app/modules/bio/bio.module';
+import { EntertainComponent } from 'src/app/modules/entertain/components/entertain/entertain.component';
+import { EntertainModule } from 'src/app/modules/entertain/entertain.module';
 
 const routes: Routes = [
   {
@@ -33,9 +34,9 @@ const routes: Routes = [
       { path: 'projects', component: ProjectsComponent },
       { path: 'contact', component: ContactComponent },
       { path: 'bio', component: BioComponent },
+      { path: 'entertain', component: EntertainComponent },
     ],
   },
-  { path: 'entertain', component: EntertainComponent },
 ];
 
 @NgModule({
@@ -61,6 +62,7 @@ const routes: Routes = [
     ContactModule,
     ProjectsModule,
     BioModule,
+    EntertainModule,
   ],
 })
 export class MainModule {}

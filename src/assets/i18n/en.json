@@ -74,5 +74,9 @@
     "address2": "Barnovi st. 80",
     "phone": "Phone",
     "email": "E-Mail"
+  },
+
+  "entertain": {
+    "title": "The International System of Units (SI)"
   }
 }

@@ -3,15 +3,19 @@
   min-width: 270px;
   margin: auto;
   padding: 0.5rem;
-  background-image: linear-gradient(rgb(31, 139, 227), rgb(20, 83, 154));
+  background-image: linear-gradient(rgb(72, 161, 233), rgb(127, 20, 154));
 }
 
 .slogan {
+  margin: 2rem;
   display: inline-block;
   justify-self: center;
-  padding: 2px;
+  padding: 10px;
   color: rgb(55, 231, 24);
   font-weight: bolder;
+  border: 2px solid red;
+  border-radius: 10px;
+  background-color: green;
 }
 
 .title {
