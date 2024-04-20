@@ -8,7 +8,11 @@ import { AfterViewInit, Component } from '@angular/core';
 export class TitleComponent implements AfterViewInit {
   backgroundImageUrl: string = '../../../assets/img/flags/ge.svg';
 
-  constructor() {}
+  language: string = '';
+
+  constructor() {
+    this.language = localStorage.getItem('language') || 'ge';
+  }
 
   ngAfterViewInit(): void {
     if (localStorage.getItem('language') == 'en') {
@@ -19,14 +23,11 @@ export class TitleComponent implements AfterViewInit {
   }
 
   changeLanguage(): void {
-    if (localStorage.getItem('language') == 'ge') {
-      localStorage.setItem('language', 'en');
-      this.backgroundImageUrl = '../../../assets/img/flags/eu.svg';
-      window.location.reload();
-    } else {
-      localStorage.setItem('language', 'ge');
-      this.backgroundImageUrl = '../../../assets/img/flags/ge.svg';
-      window.location.reload();
-    }
+    this.language = this.language === 'ge' ? 'en' : 'ge';
+    localStorage.setItem('language', this.language);
+    this.backgroundImageUrl =
+      this.language === 'ge'
+        ? '../../../assets/img/flags/ge.svg'
+        : '../../../assets/img/flags/eu.svg';
   }
 }

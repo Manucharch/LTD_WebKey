@@ -5,6 +5,11 @@
     </div>
     <div class="lang">
       <button
+        [ngClass]="{
+          'transition-effect': true,
+          'ge-background': language === 'ge',
+          'en-background': language === 'en'
+        }"
         type="button"
         class="btn btn-light"
         [style.background-image]="'url(' + backgroundImageUrl + ')'"
