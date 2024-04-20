@@ -8,3 +8,29 @@
   font-size: clamp(10px, 1.3vw, 12px);
   font-weight: bold;
 }
+
+.flagyear {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flag {
+  width: 1rem;
+}
+
+img {
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.space {
+  width: 0.2rem;
+}
+
+.flag,
+.year {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
