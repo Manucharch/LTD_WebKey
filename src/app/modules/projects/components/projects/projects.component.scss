@@ -8,10 +8,20 @@
   margin: auto;
 }
 
+.project {
+  width: 100%;
+}
+
 .row {
   justify-content: center;
 }
 
 iframe {
   border-radius: 3rem;
+}
+
+@media screen and (max-width: 575px) {
+  .projects {
+    overflow-y: auto;
+  }
 }

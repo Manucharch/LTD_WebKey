@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   ngOnInit(): void {
-    localStorage.setItem('language', 'ge');
+    if (localStorage.getItem('language') == null) {
+      localStorage.setItem('language', 'ge');
+    }
   }
 }
