@@ -5,7 +5,8 @@
     "projects": "Projects",
     "contact": "Contact",
     "search": "Search",
-    "entertain": "Entertain"
+    "entertain": "Entertain",
+    "bio": "Bio"
   },
 
   "footer": {
@@ -22,5 +23,103 @@
     "about": "See our offers",
     "cardtitle": "Why we need WEB",
     "text": "In today's digital age, having a strong online presence is essential for businesses to thrive. A professionally designed website not only establishes credibility but also serves as a powerful marketing tool, allowing you to reach a wider audience and attract potential customers. Whether you're a small startup or a large corporation, investing in web development services ensures that your brand is represented effectively online, driving growth and success in the competitive digital landscape."
+  },
+
+  "about": {
+    "title": "About",
+    "contact": "Contact as",
+    "general": "The company 'Webkey' offers full web services (FullStack Development), will prepare high-quality websites, portals, platforms or applications.",
+    "titleG": "What we are offering",
+    "front": "Frontend development is the art of crafting engaging and intuitive user interfaces that captivate your audience. We specialize in creating responsive websites and web applications that not only look stunning but also provide seamless user experiences across all devices. From pixel-perfect designs to smooth navigation and interactive elements, our frontend development services ensure your digital presence leaves a lasting impression.",
+    "titleFR": "Frontend Development",
+    "back": "Backend development powers the functionality and performance of your website or application behind the scenes. Our expertise in backend technologies enables us to build robust server-side systems that handle data storage, processing, and communication efficiently. From designing scalable databases to implementing secure APIs and business logic, our backend development services ensure your platform operates seamlessly, providing reliability and performance for your users.",
+    "titleBK": "Backend development",
+    "full": "At WebKey, we offer comprehensive full-stack development services that cover both frontend and backend aspects of your project. Our full-stack developers are proficient in a wide range of technologies, allowing us to create dynamic and fully functional web applications from start to finish. From crafting captivating user interfaces to building robust server-side systems and integrating databases, our full-stack development expertise ensures that your project is executed seamlessly, delivering exceptional user experiences and meeting your business objectives.",
+    "titleFL": "FullStack Development",
+    "windows": "At 'WebKey', we specialize in Windows Forms development, leveraging the power of the Microsoft .NET framework to create intuitive desktop applications for Windows environments. Our team of experienced developers crafts sleek and efficient user interfaces tailored to meet your specific requirements. Whether you need standalone applications, data-driven tools, or custom business solutions, our Windows Forms development services deliver reliable, scalable, and user-friendly software to streamline your workflow and enhance productivity.",
+    "titleW": "Windows Applications"
+  },
+
+  "contact": {
+    "contact": "Contact as",
+    "text": "Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within a matter of hours to help you.",
+    "name": "Your name",
+    "mail": "Your email",
+    "subject": "Subject",
+    "massage": "Your message",
+    "address": "Tbilisi, Georgia",
+    "send": "Send",
+    "sending": "Sending ...",
+    "hello": "Hello",
+    "newMess": "You got a new message from WebKey",
+    "wish": "Best wishes, WebKey team",
+    "replText": "Your email has been received, our team will contact you shortly."
+  },
+
+  "projects": {
+    "link": "Go to WebSite"
+  },
+
+  "bio": {
+    "title": "Short Biography",
+    "fullname": "FullName",
+    "name": "Manuchar Chachanidze",
+    "birthDay1": "Date of Bearth",
+    "birthDay2": "3 December, 1979",
+    "placeofbirth1": "Place of Bearth",
+    "placeofbirth2": "Tchiatura, Georgia",
+    "placeofrecidence1": "Place of Residenece",
+    "placeofrecidence2": "Tbilisi, Georgia",
+    "address1": "Address",
+    "address2": "Barnovi st. 80",
+    "phone": "Phone",
+    "email": "E-Mail"
+  },
+
+  "entertain": {
+    "title": "The International System of Units (SI)",
+    "head": "Name",
+    "head1": "Symbol",
+    "head2": "Measure",
+    "head3": "Formal Defination",
+    "head4": "Historical origin / justification",
+    "head5": "Dimension Symbol",
+    "time": "Second",
+    "time1": "s",
+    "time2": "Time",
+    "time3": "The second, symbol s, is defined as the duration of 9,192,631,770 periods of the radiation corresponding to the transition between two hyperfine levels of the ground state of the cesium-133 atom.",
+    "time4": "The day is divided into 24 hours, each hour divided into 60 minutes, each minute divided into 60 seconds. A second is 1 / (24 × 60 × 60) of the day. Historically, a day was defined as the mean solar day; i.e., the average time between two successive occurrences of local apparent solar noon.",
+    "length": "Metre",
+    "length1": "m",
+    "length2": "Length",
+    "length3": "The metre, symbol m, is the SI unit of length. It is defined as the distance traveled by light in a vacuum during a specific fraction of a second. Specifically, the meter is defined as the length of the path traveled by light in a vacuum during a time interval of 1/299,792,458 of a second.",
+    "length4": "1 / 10000000 of the distance from the Earth's equator to the North Pole measured on the meridian arc through Paris.",
+    "mass": "Kilogram",
+    "mass1": "kg",
+    "mass2": "Mass",
+    "mass3": "The kilogram, symbol kg, is defined based on the International Prototype of the Kilogram (IPK), a physical object made of platinum-iridium alloy kept at the International Bureau of Weights and Measures (BIPM) in France.",
+    "mass4": "The mass of one litre of water at the temperature of melting ice. A litre is one thousandth of a cubic metre.",
+    "ampere": "Ampere",
+    "ampere1": "A",
+    "ampere2": "Electric Current",
+    "ampere3": "The ampere, symbol A, is defined based on the constant current that, if maintained in two straight parallel conductors of infinite length, of negligible circular cross-section, and placed one meter apart in a vacuum, would produce a force between these conductors of exactly  2 × 10^−7 newtons per meter of length.",
+    "ampere4": "The original 'International Ampere' was defined electrochemically as the current required to deposit 1.118 milligrams of silver per second from a solution of silver nitrate.",
+    "kelvin": "Kelvin",
+    "kelvin1": "K",
+    "kelvin2": "Thermodynamic Temperature",
+    "kelvin3": "The kelvin, symbol K, is the SI unit of thermodynamic temperature. It is defined based on the triple point of water, which is the temperature and pressure at which water coexists in equilibrium in all three phases: solid, liquid, and vapor.",
+    "kelvin4": "The Celsius scale: the Kelvin scale uses the degree Celsius for its unit increment, but is a thermodynamic scale (0 K is absolute zero).",
+    "mole": "Mole",
+    "mole1": "mol",
+    "mole2": "Amount of Substance",
+    "mole3": "In the International System of Units (SI), the mole is formally defined as the unit of amount of substance. It represents the quantity of a substance that contains as many elementary entities (atoms, molecules, ions, etc.) as there are atoms in exactly 0.012 kilograms of carbon-12. This definition establishes a fixed numerical value for the Avogadro constant, which is approximately  6.022 × 10^23 elementary entities per mole. Therefore, one mole of any substance contains approximately 6.022 × 10^23 particles.",
+    "mole4": "Atomic weight or molecular weight divided by the molar mass constant, 1 g/mol.",
+    "candela": "Candela",
+    "candela1": "cd",
+    "candela2": "Luminous Intensity",
+    "candela3": "In the International System of Units (SI), the candela (cd) is formally defined as the unit of luminous intensity. It is defined based on the spectral sensitivity of the human eye to light of different wavelengths. Specifically, the candela is defined such that the luminous intensity of a light source emitting monochromatic radiation at a frequency of 540 × 10^12 hertz (corresponding to green light) is 1 / 683 watt per steradian. This definition ensures that the candela is based on human perception of light and provides a standardized measure of the brightness of a light source.",
+    "candela4": "Prior to the establishment of the candela, various units such as candles, oil lamps, and gas lamps were used, but they lacked precision and consistency.",
+    "converttitle": "Unit Convertations",
+    "convunit": "Units"
   }
 }

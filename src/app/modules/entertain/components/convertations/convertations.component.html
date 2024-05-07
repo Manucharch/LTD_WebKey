@@ -1,0 +1,67 @@
+<div class="title">
+  <h4>{{ "entertain.converttitle" | translate }}</h4>
+</div>
+
+<table class="table table-primary table-bordered table-hover">
+  <thead>
+    <tr class="align-middle">
+      <th style="width: 7%" scope="col">
+        {{ "entertain.convunit" | translate }}
+      </th>
+      <th style="width: 7%" scope="col">SI</th>
+      <th style="width: 7%" scope="col">
+        <select [(ngModel)]="country" name="country" id="country">
+          <option
+            *ngFor="let country of countries; let i = index"
+            [ngValue]="country"
+          >
+            {{ country }}
+          </option>
+        </select>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="align-middle">
+      <td>{{ "entertain.time2" | translate }}</td>
+      <td>{{ "entertain.time1" | translate }}</td>
+      <td>1 {{ countries[0] }}</td>
+    </tr>
+
+    <tr class="align-middle">
+      <td>{{ "entertain.length2" | translate }}</td>
+      <td>{{ "entertain.length1" | translate }}</td>
+      <td>new</td>
+    </tr>
+
+    <tr class="align-middle">
+      <td>{{ "entertain.mass2" | translate }}</td>
+      <td>{{ "entertain.mass1" | translate }}</td>
+      <td>new</td>
+    </tr>
+
+    <tr class="align-middle">
+      <td>{{ "entertain.ampere2" | translate }}</td>
+      <td>{{ "entertain.ampere1" | translate }}</td>
+      <td>new</td>
+    </tr>
+
+    <tr class="align-middle">
+      <td>{{ "entertain.kelvin2" | translate }}</td>
+      <td>{{ "entertain.kelvin1" | translate }}</td>
+      <td>new</td>
+    </tr>
+
+    <tr class="align-middle">
+      <td>{{ "entertain.mole2" | translate }}</td>
+      <td>{{ "entertain.mole1" | translate }}</td>
+      <td>new</td>
+    </tr>
+
+    <tr class="align-middle">
+      <td>{{ "entertain.candela2" | translate }}</td>
+      <td>{{ "entertain.candela1" | translate }}</td>
+      <td>new</td>
+    </tr>
+  </tbody>
+</table>

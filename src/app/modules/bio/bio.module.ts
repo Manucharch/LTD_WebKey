@@ -1,14 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HttpClient } from '@angular/common/http';
+import { BioComponent } from './components/bio/bio.component';
+import { RouterModule } from '@angular/router';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { HttpClient } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
-import { AboughtComponent } from 'src/app/modules/abought/components/abought/abought.component';
-import { RouterModule } from '@angular/router';
-
 @NgModule({
-  declarations: [AboughtComponent],
+  declarations: [BioComponent],
   imports: [
     CommonModule,
     RouterModule,
@@ -21,7 +20,7 @@ import { RouterModule } from '@angular/router';
     }),
   ],
 })
-export class AboughtModule {}
+export class BioModule {}
 
 export function httpTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http);

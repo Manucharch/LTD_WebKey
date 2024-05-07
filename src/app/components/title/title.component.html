@@ -1,6 +1,23 @@
 <div class="main">
   <section class="title">
-    <h1>{{ "title.h1" | translate }}</h1>
+    <div class="h1">
+      <h1>{{ "title.h1" | translate }}</h1>
+    </div>
+    <div class="lang">
+      <button
+        [ngClass]="{
+          'transition-effect': true,
+          'ge-background': language === 'ge',
+          'en-background': language === 'en'
+        }"
+        type="button"
+        class="btn btn-light"
+        [style.background-image]="'url(' + backgroundImageUrl + ')'"
+        (click)="changeLanguage()"
+      >
+        <div class="flag"></div>
+      </button>
+    </div>
   </section>
   <section class="slogan">
     <h4>{{ "title.slogan" | translate }}</h4>

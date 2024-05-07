@@ -4,11 +4,18 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { HttpClient } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
-import { ContactComponent } from 'src/app/modules/contact/components/contact/contact.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { EntertainComponent } from 'src/app/modules/entertain/components/entertain/entertain.component';
+
+import { UnittableComponent } from 'src/app/modules/entertain/components/unittable/unittable.component';
+import { ConvertationsComponent } from './components/convertations/convertations.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [ContactComponent],
+  declarations: [
+    EntertainComponent,
+    UnittableComponent,
+    ConvertationsComponent,
+  ],
   imports: [
     CommonModule,
     TranslateModule.forRoot({
@@ -18,10 +25,10 @@ import { ReactiveFormsModule } from '@angular/forms';
         deps: [HttpClient],
       },
     }),
-    ReactiveFormsModule,
+    FormsModule,
   ],
 })
-export class ContactModule {}
+export class EntertainModule {}
 
 export function httpTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http);
