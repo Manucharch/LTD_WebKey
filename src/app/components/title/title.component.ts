@@ -29,5 +29,7 @@ export class TitleComponent implements AfterViewInit {
       this.language === 'ge'
         ? '../../../assets/img/flags/ge.svg'
         : '../../../assets/img/flags/eu.svg';
+
+        window.location.reload();
   }
 }
