@@ -30,11 +30,11 @@ const routes: Routes = [
     children: [
       { path: '', redirectTo: 'home', pathMatch: 'full' },
       { path: 'home', component: HomeComponent },
-      { path: 'about', component: AboughtComponent },
-      { path: 'projects', component: ProjectsComponent },
-      { path: 'contact', component: ContactComponent },
-      { path: 'bio', component: BioComponent },
-      { path: 'entertain', component: EntertainComponent },
+      { path: 'about', loadChildren: () => import('src/app/modules/abought/abought.module').then(m => m.AboughtModule) },
+      { path: 'projects', loadChildren: () => import('src/app/modules/projects/projects.module').then(m => m.ProjectsModule) },
+      { path: 'contact', loadChildren: () => import('src/app/modules/contact/contact.module').then(m => m.ContactModule) },
+      { path: 'bio', loadChildren: () => import('src/app/modules/bio/bio.module').then(m => m.BioModule) },
+      { path: 'entertain', loadChildren: () => import('src/app/modules/entertain/entertain.module').then(m => m.EntertainModule) }
     ],
   },
 ];
