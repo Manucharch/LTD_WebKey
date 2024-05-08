@@ -20,6 +20,7 @@
 
 .title {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   color: darkorange;
@@ -36,13 +37,10 @@ img {
   align-items: center;
 }
 
-.h1 {
-  margin: 0px 0.5rem 0px 0px;
-}
-
 h1 {
   margin: 0px;
   padding: 0px;
+  font-family: 'MyFont';
 }
 
 button {
