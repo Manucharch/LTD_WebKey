@@ -2,7 +2,6 @@
   display: grid;
   min-width: 270px;
   margin: auto;
-  padding: 0.5rem;
   background-image: linear-gradient(rgb(72, 161, 233), rgb(127, 20, 154));
 }
 
@@ -19,11 +18,16 @@
 }
 
 .title {
+  min-width: 40%;
+  margin: auto;
+  padding: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: darkorange;
+  border-radius: 100px;
+  background-color: rgb(194, 217, 248);
 }
 
 img {
@@ -35,12 +39,16 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 5px;
+  background-color: rgb(128, 173, 212);
+  border-radius: 20px;
 }
 
 h1 {
   margin: 0px;
   padding: 0px;
   font-family: 'MyFont';
+  font-size: 50px;
 }
 
 button {
@@ -65,4 +73,11 @@ button {
 
 .en-background {
   background-image: url("../../../assets/img/flags/eu.svg");
+}
+
+
+@media screen and (max-width: 750px) {
+  .title {
+    min-width: 60%;
+  }
 }
