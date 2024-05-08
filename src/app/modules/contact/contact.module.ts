@@ -1,28 +1,26 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
-import { HttpClient } from '@angular/common/http';
-import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import {  TranslateModule } from '@ngx-translate/core';
 
 import { ContactComponent } from 'src/app/modules/contact/components/contact/contact.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { RouterModule, Routes } from '@angular/router';
+
+const routes: Routes = [
+  {
+    path: '',
+    component: ContactComponent
+  }
+];
+
 
 @NgModule({
   declarations: [ContactComponent],
   imports: [
     CommonModule,
-    TranslateModule.forRoot({
-      loader: {
-        provide: TranslateLoader,
-        useFactory: httpTranslateLoader,
-        deps: [HttpClient],
-      },
-    }),
+    TranslateModule.forChild(),
+    RouterModule.forChild(routes),
     ReactiveFormsModule,
   ],
 })
 export class ContactModule {}
-
-export function httpTranslateLoader(http: HttpClient) {
-  return new TranslateHttpLoader(http);
-}

@@ -1,28 +1,24 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HttpClient } from '@angular/common/http';
-import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
-import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import {  TranslateModule } from '@ngx-translate/core';
 
 import { AboughtComponent } from 'src/app/modules/abought/components/abought/abought.component';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
+
+const routes: Routes = [
+  {
+    path: '',
+    component: AboughtComponent
+  }
+];
 
 @NgModule({
   declarations: [AboughtComponent],
   imports: [
     CommonModule,
     RouterModule,
-    TranslateModule.forRoot({
-      loader: {
-        provide: TranslateLoader,
-        useFactory: httpTranslateLoader,
-        deps: [HttpClient],
-      },
-    }),
+    TranslateModule.forChild(),
+    RouterModule.forChild(routes),
   ],
 })
 export class AboughtModule {}
-
-export function httpTranslateLoader(http: HttpClient) {
-  return new TranslateHttpLoader(http);
-}
