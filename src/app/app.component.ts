@@ -8,8 +8,6 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class AppComponent {
   constructor(public translate: TranslateService) {
-    // translate.addLangs(['en', 'ge']);
-    // translate.setDefaultLang('ge');
     translate.use(localStorage.getItem('language') || 'ge');
   }
   title = 'WebKey';
