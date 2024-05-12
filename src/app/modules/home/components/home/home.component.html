@@ -1,17 +1,25 @@
-<div class="card" style="max-width: 95vw">
-  <div class="card-body">
-    <h5 class="card-title">{{ "home.cardtitle" | translate }}</h5>
-    <p class="card-text" style="max-width: 50rem">
-      {{ "home.text" | translate }}
-    </p>
-    <a [routerLink]="'/about'" class="btn btn-primary">{{
-      "home.about" | translate
-    }}</a>
+<head>
+  <title>home</title>
+</head>
+
+<body>
+  <div class="card" style="max-width: 95vw">
+    <div class="card-body">
+      <h5 class="card-title">{{ "home.cardtitle" | translate }}</h5>
+      <p class="card-text" style="max-width: 50rem">
+        {{ "home.text" | translate }}
+      </p>
+      <a [routerLink]="'/about'" class="btn btn-primary">{{
+        "home.about" | translate
+      }}</a>
+    </div>
+    <img
+      src="assets/img/backgrounds/main5.jpg"
+      class="card-img-top"
+      alt="{{ 'home.alt' | translate }}"
+      style="max-width: 50rem"
+    />
   </div>
-  <img
-    src="assets/img/backgrounds/main5.jpg"
-    class="card-img-top"
-    alt="{{ 'home.alt' | translate }}"
-    style="max-width: 50rem"
-  />
-</div>
+</body>
+
+
