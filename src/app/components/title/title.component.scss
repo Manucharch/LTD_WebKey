@@ -15,7 +15,7 @@
   border: 2px dotted red;
   border-radius: 10px;
   background-color: green;
-  font-family: 'slogan';
+  font-family: "slogan";
 }
 
 .title {
@@ -26,9 +26,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: darkorange;
-  border-radius: 100px;
-  background-color: rgb(40, 83, 236);
+  color: orange;
 }
 
 img {
@@ -41,15 +39,16 @@ img {
   justify-content: center;
   align-items: center;
   padding: 5px;
-  background-color: rgb(128, 173, 212);
+  background-color: white;
   border-radius: 20px;
 }
 
 h1 {
   margin: 0px;
   padding: 0px;
-  font-family: 'MyFont';
+  font-family: "MyFont";
   font-size: 50px;
+  text-shadow: 2px 2px #ff0000;
 }
 
 button {
@@ -75,7 +74,6 @@ button {
 .en-background {
   background-image: url("../../../assets/img/flags/eu.svg");
 }
-
 
 @media screen and (max-width: 750px) {
   .title {

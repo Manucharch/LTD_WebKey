@@ -1,24 +1,27 @@
 @font-face {
-  font-family: 'MyFont';
-  src: url('./assets/fonts/alkdots-webfont.ttf');
+  font-family: "MyFont";
+  src: url("./assets/fonts/alkdots-webfont.ttf");
 }
 
 @font-face {
-  font-family: 'navBar';
-  src: url('./assets/fonts/bpg-rioni-vera-light-webfont.ttf');
+  font-family: "navBar";
+  src: url("./assets/fonts/bpg-rioni-vera-light-webfont.ttf");
 }
 
 @font-face {
-  font-family: 'slogan';
-  src: url('./assets/fonts/alk-life-webfont.ttf');
+  font-family: "slogan";
+  src: url("./assets/fonts/alk-life-webfont.ttf");
 }
-
 
 @font-face {
-  font-family: 'cardTitle';
-  src: url('./assets/fonts/bpg-nino-mtavruli-webfont.ttf');
+  font-family: "cardTitle";
+  src: url("./assets/fonts/bpg-nino-mtavruli-webfont.ttf");
 }
 
+@font-face {
+  font-family: "cardText";
+  src: url("./assets/fonts/bpg-irubaqidze-webfont.ttf");
+}
 
 *,
 *::before,

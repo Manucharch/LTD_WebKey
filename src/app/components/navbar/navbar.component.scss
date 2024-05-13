@@ -3,10 +3,14 @@
   padding: 0px;
 }
 
-
 a {
   font-size: 1.3rem;
-  font-family: 'navBar';
+  font-family: "navBar";
+  font-weight: 900;
+}
+
+a:hover {
+  border-bottom: 2px solid black;
 }
 
 .facebooke,
