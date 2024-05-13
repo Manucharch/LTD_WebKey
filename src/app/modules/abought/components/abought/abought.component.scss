@@ -5,7 +5,6 @@
   align-items: center;
   background-color: rgb(225, 208, 143);
   max-width: 95vw;
-  margin: 1rem;
   border-radius: 10px;
 }
 
@@ -16,4 +15,20 @@ h5 {
 .card-text {
   font-family: cardText;
   font-size: 25px;
+}
+
+.container {
+  padding: 10px;
+}
+
+.card {
+  margin: 10px;
+}
+
+.card:hover {
+  background-color: rgb(252, 186, 186);
+  cursor: zoom-in;
+
+  scale: 1.05;
+  z-index: 2;
 }
